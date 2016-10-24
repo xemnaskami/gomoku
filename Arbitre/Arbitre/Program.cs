@@ -54,13 +54,16 @@ namespace Arbitre
         
         private static bool pose(int x, int y)
         {
-            array[x, y] = player;
-            if (victory(x, y, player))
+            if (array[x, y] == 0)
             {
-                winner = player;
-                Console.WriteLine("il y a un winner : " + winner);
+                array[x, y] = player;
+                if (victory(x, y, player))
+                {
+                    winner = player;
+                    Console.WriteLine("il y a un winner : " + winner);
+                }
+                player = player % 2 + 1;
             }
-            player = player % 2 + 1;
             x = -1;
             y = -1;
             return true;

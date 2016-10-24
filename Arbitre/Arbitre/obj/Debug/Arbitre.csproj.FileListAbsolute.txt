@@ -3,3 +3,9 @@ C:\Users\pyre_a\Documents\GitHub\gomoku\Arbitre\Arbitre\bin\Debug\Arbitre.exe
 C:\Users\pyre_a\Documents\GitHub\gomoku\Arbitre\Arbitre\bin\Debug\Arbitre.pdb
 C:\Users\pyre_a\Documents\GitHub\gomoku\Arbitre\Arbitre\obj\Debug\Arbitre.exe
 C:\Users\pyre_a\Documents\GitHub\gomoku\Arbitre\Arbitre\obj\Debug\Arbitre.pdb
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\bin\Debug\Arbitre.exe.config
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\bin\Debug\Arbitre.exe
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\bin\Debug\Arbitre.pdb
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\obj\Debug\Arbitre.csprojResolveAssemblyReference.cache
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\obj\Debug\Arbitre.exe
+C:\Users\nathan\Documents\gomoku\gomoku\Arbitre\Arbitre\obj\Debug\Arbitre.pdb
