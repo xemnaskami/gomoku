@@ -11,13 +11,15 @@ namespace Arbitre
     {
         static void Main(string[] args)
         {
-            int[,] array = Program.initArray();
+            int[,] array = new int[19, 19];
+            initArray(ref array);
 
             int num = 0;
             string UserEntry = "";
             bool IsOk = false;
             do
             {
+                print(array);
                 UserEntry = Console.ReadLine();
                 IsOk = int.TryParse(UserEntry, out num);
             } while (!IsOk && UserEntry != "q");
@@ -37,9 +39,8 @@ namespace Arbitre
             }
         }
 
-        int[,] initArray()
+        void initArray(ref int [,] array)
         {
-            int[,] array = new int[19, 19];
             for (int i = 0; i < 19; i++)
             {
                 for (int j = 0; j < 19; j++)
@@ -48,8 +49,6 @@ namespace Arbitre
                 }
             }
             array[9, 9] = 1;
-            return (array);
         }
-
     }
 }
