@@ -10,22 +10,47 @@ namespace Arbitre
     class Program
     {
         private static int[,] array;
+        private static int player = 2;
 
         static void Main(string[] args)
         {
             initArray();
 
-            int num = 0;
+            int first = -1;
+            int second = -1;
             string UserEntry = "";
-            bool IsOk = false;
-            while (!IsOk && UserEntry != "q")
+ 
+            while (UserEntry != "q")
             {
-                printArray();
+                if (first == -1)
+                    printArray();
                 UserEntry = Console.ReadLine();
-                IsOk = int.TryParse(UserEntry, out num);
+                if (first == -1)
+                {
+                    if (!(int.TryParse(UserEntry, out first)))
+                        first = -1;
+                }
+                else
+                {
+                    if (!(int.TryParse(UserEntry, out second)))
+                        second = -1;
+                }
+                if (first != -1 && second != -1)
+                {
+                    pose(first, second);
+                }
             } 
         }
         
+        private static bool pose(int x, int y)
+        {
+            array[x, y] = player;
+            player = player % 2 + 1;
+            x = -1;
+            y = -1;
+            return true;
+        }
+
         private static void printArray()
         {
             Console.Clear();
